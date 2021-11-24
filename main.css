@@ -1,0 +1,543 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(./fonts/ProximaNova-Regular-400.woff);
+    font-style: normal;
+    font-size: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили верхнего меню навигации */
+
+.wrapper_nav_bar {
+    display: flex;
+    justify-content: space-between;
+    Height: 80px;
+    box-shadow: 0px 2px 4px #E9E9E9;
+    background-color: #FAF9F9;
+    /* position: fixed; */
+}
+
+.logo {
+    height: 32px;
+    width: 171px;
+    align-self: center;
+    margin-left: 80px;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+    text-decoration: none;
+    width: 499px;
+    height: 24px;
+    left: 385px;
+    top: 31px;
+}
+
+.nav_menu > ul > a {
+    text-decoration: none;
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+}
+
+.nav_icon {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    width: 20%;
+    margin-right: 40px;
+}
+
+.season_game {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    padding: 8px 5px 8px 10px;
+    width: 70px;
+    height: 40px;
+}
+
+.nav_avatar {
+    width: 34px;
+    height: 34px;
+    align-self: center;
+}
+
+.nav_bag {
+    width: 21px;
+    height: 28px;
+    align-self: center;
+}
+
+/* стили header игрока*/
+
+.wrapper_header  {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FAF9F9;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.sider_bar {
+    width: 295px;
+    height: 184px;
+    background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
+    border-radius: 10px;
+}
+
+.player_info {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+.sider_bar > p {
+    color: #ACAFF3;
+    font-size: 12px;
+    padding-top: 35px;
+    padding-left: 20px;
+    text-decoration: underline;
+}
+
+.header_avatar {
+    padding-top: 25px;
+}
+
+.text_player {
+    color: #fff;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+.stat_player {
+    font-family: 'Proxima Nova';
+    font-size: 30px;
+}
+
+.stat_player > span {
+    position: absolute;
+    font-size: 12px;
+    background: #5A60E7;
+    border-radius: 10px;
+}
+
+.player_name {
+    font-family: 'Proxima Nova';
+    font-size: 20px;
+    padding-right: 5%;
+}
+
+/* стили Header ститистики */
+
+.wrapper_stat_info {
+    display: flex;
+    justify-content: space-around;
+    width: 1015px;
+    height: 184px;
+    background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
+    border-radius: 10px;
+}
+
+.achiev_stat_block {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 30%;
+}
+
+.achiev_block_up {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.acheiv_up_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.achiev_item {
+    padding-right: 15px;
+}
+
+.achiev_up_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.achiev_block_down {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.achiev_down {
+    padding-right: 5px;
+}
+
+.achiev_item > span {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-size: 12px;
+    color: #5A60E7;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 1px;
+    position: absolute;
+}
+
+/* центр блока ститистики + кнопки*/
+
+.resultat_stat {
+    padding-top: 24px;
+}
+
+.btn_resultat {
+    width: 440px;
+    height: 40px;
+    border: 0.5px solid #5A60E7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-size: 16px;
+    color: #fff;
+}
+
+.btn_all_season {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    background: #5A60E7;
+    border-radius: 3px;
+    width: 210px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_all_season > a,
+.btn_season2020 > a {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn_season2020 {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-size: 16px;
+    color: #fff;
+    width: 210px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.item_resultat_game {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 29px;
+}
+
+.title_resultat {
+    padding: 10px;
+}
+
+.stat_item_goal_pass,
+.stat_item_pass,
+.stat_item_goal,
+.stat_item_game {
+    width: 95px;
+    height: 75px;
+    background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
+    border-radius: 5px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient( to bottom right, rgba(97, 113, 255, 1), rgba(90, 96, 231, 0) 50% );
+}
+
+.item_game,
+.item_goal,
+.item_pass,
+.item_goal_pass {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* правая часть ститистики */
+
+.link_soc_stat > img {
+    padding-top: 10px;
+}
+
+.link_soc {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    position: fixed;
+}
+
+.link_soc > span {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-size: 12px;
+    color: #ACAFF3;
+}
+
+.img_soc_stat > img {
+    padding: 7px 14px 0 0;
+}
+
+/* раздел меню сайдбара */
+
+.wrapper_header_sider {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FAF9F9;
+    padding-left: 40px;
+}
+
+.wrapper_header_info {
+    width: 295px;
+    background-color: #fff;
+}
+
+.wrapper_menu_sider_bar {
+    width: 210px;
+    height: 336px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.menu_statist > span::before {
+    content: url(./img/Icon_/user.png);
+}
+
+.menu_statist::after {
+    content: url(./img/Icon_/arrow\ up.png);
+}
+
+.menu_statist {
+    width: 210px;
+    height: 32px;
+    background-color: #EFEFFD;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-size: 16px;
+}
+
+
+.item_statist {
+    width: 210px;
+    height: 106px;
+    float: right;
+}
+
+.item_game_stat_soccet,
+.item_game_stat_basket,
+.item_game_stat_voley {
+    width: 190px;
+    height: 32px;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-size: 16px;
+}
+
+.menu_next_game::before {
+    content: url(./img/Icon_/calendar.png);
+}
+
+.menu_game_report::before {
+    content: url(./img/Icon_/report.png);
+}
+
+.menu_history_order::before {
+    content: url(./img/Icon_/history\ .png);
+}
+
+.menu_log_out {
+    margin-left: 20px;
+}
+
+.menu_log_out::before {
+    content: url(./img/Icon_/log\ out.png);
+}
+
+/* раздел таблицы */
+
+.wrapper_table_ratio {
+    width: 1015px;
+    background-color: #FAF9F9;
+}
+
+.btn_format_table {
+    width: 170px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align-last: justify;
+}
+
+.btn_format_table >span {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-size: 16px;
+    Padding: 8px 10px 8px 10px;
+}
+
+/* Стили самой таблицы */
+
+.wrapper_table {
+    padding-top: 20px;
+    filter: drop-shadow(0px 2px 8px #E9E9E9);
+    border-radius: 0px 0px 10px 10px;
+}
+.tr {
+    background-color: #fff;
+}
+
+.body_table {
+    width: 1015px;
+}
+
+tr, td {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-size: 16px;
+    height: 60px;
+}
+.td-rating {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-size: 16px;
+    color: #5A60E7;
+}
+
+.season_2019,
+.season_2017 {
+    background-color: #fff;
+}
+
+/* Стили футера */
+
+.wrapper_footer {
+    height: 400px;
+    background-color: #222222;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_contact {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.footer_contact > img {
+    padding-bottom: 30px;
+}
+
+.contact_our {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_our > .contact {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-size: 18px;
+    color: #ACAFF3;
+
+}
+
+.contact_our > span {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.footer_items_menu {
+    margin-left: 20px;
+    width: clamp(300px, 60vw, 830px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 90px;
+    padding-top: 50px;
+}
+
+.footer_down {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.items_menu {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-size: 18px;
+    color: #ACAFF3;
+    display: flex;
+    flex-direction: column;
+}
+
+.items_menu > span {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer_down {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-size: 18px;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .nav_menu {
+        display: none;
+    }
+}
